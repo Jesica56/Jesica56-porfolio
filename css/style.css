@@ -1,6 +1,7 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,7 @@ header {
 	justify-content: flex-end;
 	height: 82px;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(134, 22, 0, 0.6);
 	padding: 0px 30px;
 	position: fixed;
 	box-sizing: border-box;
@@ -41,6 +42,7 @@ header {
 #navbar ul li a {
 	color: white;
 	display: block;
+	font-size: x-large;
 	padding: 20px 30px;
 	text-decoration: none;
 }
@@ -55,14 +57,152 @@ header {
 
 main {
 	display: block;
-	padding-top: 83px;
 }
 
 #welcome-section {
-	 background: rgba(0, 0, 1, 0.3);
-    background-image: linear-gradient(
+	background: rgb(46, 89, 89);
+    /*background-image: linear-gradient(
         115deg,
         rgba(5, 11, 6, 0.6),
-        rgba(19, 165, 137, 0.5)), url(https://ignaciosantiago.com/wp-content/uploads/2018/06/pagina-web-profesional-saviapsicosalud-maria-jesus-riaza.png);
-    height: 503px;
+        rgba(68, 48, 141, 0.6)), url(https://www.graphic-design-scotland.co.uk/application/files/thumbnails/slide_2x/3115/6570/1684/web-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;*/
+    height: 624px;
 }
+
+#welcome-section h1 p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#welcome-section h1 {
+	padding: 200px 50px 30px;
+	font-family: serif;
+	font-size: 100px;
+	font-weight: bold;
+	text-align: -webkit-center;
+	color: ghostwhite;
+}
+
+#welcome-section p {
+	color: ghostwhite;
+    font-size: xxx-large;
+    font-family: serif;
+    text-align: -webkit-center;
+    font-style: oblique;
+    padding: 5px;
+}
+
+#projects {
+	background-color: rgb(32, 67, 99);
+	height: 624px;
+}
+
+#projects .container {
+	max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 0px 183px;
+}
+
+#projects h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: xxx-large;
+	color: rgb(255, 255, 255);
+	text-decoration: underline;
+	padding: 80px 40px 60px;
+}
+
+#projects .project-title {
+	width: 279px;
+	cursor: pointer;
+    box-shadow: 0 0 14px 3px rgb(0 0 0);
+    transition: all 300ms ease;
+    border-radius: 6px;
+	background-color: rgb(255, 255, 255);
+}
+
+#projects .project-title figure img {
+	display: block;
+	width: 279px;
+    height: 163px;
+}
+
+#projects .project-title figcaption {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+#contact {
+	background-color: rgb(37, 47, 56);
+	height: 525px;
+}
+
+#contact h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+	font-size: -webkit-xxx-large;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 80px 40px 30px;
+}
+
+#contact .contact-link {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+#contact .contact-link i {
+	padding: 10px;
+	/*lor: rgb(135, 135, 135);*/
+	transition: .3s ease;
+}
+
+#GitHub:hover {
+	cursor: pointer;
+	color: rgb(255, 255, 255);
+	transform: translateY(-6px);
+}
+
+#email:hover {
+	cursor: pointer;
+	color: rgb(153, 0, 3);
+	transform: translateY(-6px);
+}
+
+#mobil:hover {
+	cursor: pointer;
+	color: rgb(9, 9, 10);
+	transform: translateY(-6px);
+}
+
+#linkedin:hover {
+	cursor: pointer;
+	color: rgb(67, 152, 232);
+	transform: translateY(-6px);
+}
+
+#contact .contact-link i a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+    font-size: xx-large;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
