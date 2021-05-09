@@ -14,7 +14,7 @@ header {
 	justify-content: flex-end;
 	height: 82px;
 	width: 100%;
-	background-color: rgba(134, 22, 0, 0.6);
+	background-color: rgba(2, 2, 3, 0.9);
 	padding: 0px 30px;
 	position: fixed;
 	box-sizing: border-box;
@@ -29,7 +29,7 @@ header {
 #navbar ul {
 	list-style: none;
 	display: block;
-	height: 50px;
+	height: 70px;
 	margin: 10px;
 	padding: 5px;
 
@@ -60,13 +60,12 @@ main {
 }
 
 #welcome-section {
-	background: rgb(46, 89, 89);
-    /*background-image: linear-gradient(
+    background-image: linear-gradient(
         115deg,
-        rgba(5, 11, 6, 0.6),
-        rgba(68, 48, 141, 0.6)), url(https://www.graphic-design-scotland.co.uk/application/files/thumbnails/slide_2x/3115/6570/1684/web-design.jpg);
+        rgba(5, 13, 3, 0.6),
+        rgba(233, 56, 91, 0.6)), url(https://www.wearemarketing.com/uploads/media/default/0001/21/1778829c66b7800a38a5c6ec92827c482fc056cb.jpeg);
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
     height: 624px;
 }
 
@@ -91,12 +90,13 @@ main {
     font-family: serif;
     text-align: -webkit-center;
     font-style: oblique;
+    font-weight: bold;
     padding: 5px;
 }
 
 #projects {
-	background-color: rgb(32, 67, 99);
-	height: 624px;
+	background-color: rgb(3, 1, 18);
+	height: 780px;
 }
 
 #projects .container {
@@ -105,6 +105,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     margin: 0px 183px;
+    padding-top: 41px;
 }
 
 #projects h2 {
@@ -113,11 +114,12 @@ main {
 	justify-content: center;
 	font-size: xxx-large;
 	color: rgb(255, 255, 255);
-	text-decoration: underline;
-	padding: 80px 40px 60px;
+	padding: 80px 40px 28px;
+	border-bottom: solid;
+    border-bottom-style: double;
 }
 
-#projects .project-title {
+#projects .project-tile {
 	width: 279px;
 	cursor: pointer;
     box-shadow: 0 0 14px 3px rgb(0 0 0);
@@ -126,21 +128,44 @@ main {
 	background-color: rgb(255, 255, 255);
 }
 
-#projects .project-title figure img {
+#projects .project-tile figure img {
 	display: block;
 	width: 279px;
     height: 163px;
 }
 
-#projects .project-title figcaption {
+#projects .project-tile figcaption {
 	display: flex;
     align-items: center;
     justify-content: center;
     font-size: x-large;
 }
 
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: .5em;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.btn-ir-a {
+    font-size: 2rem;
+    width: 198px;
+    background: rgb(150, 129, 144);
+    transition: background 0.3s ease-out;
+    margin: 10px 585px 5px;
+}
+
+.btn-ir-a:hover {
+	background: rgb(247, 111, 229);
+}
+
 #contact {
-	background-color: rgb(37, 47, 56);
+	background-color: rgb(214, 131, 146);
 	height: 525px;
 }
 
@@ -152,7 +177,7 @@ main {
 	font-size: -webkit-xxx-large;
     font-style: italic;
     font-weight: lighter;
-    padding: 80px 40px 30px;
+    padding: 150px 40px 30px;
 }
 
 #contact .contact-link {
@@ -165,8 +190,8 @@ main {
 
 #contact .contact-link i {
 	padding: 10px;
-	/*lor: rgb(135, 135, 135);*/
 	transition: .3s ease;
+	margin: 10px;
 }
 
 #GitHub:hover {
@@ -206,3 +231,9 @@ footer {
     padding: 2rem;
     background: var(--main-gray);
     border-top: 4px solid var(--main-red);
+    background-color: rgba(3, 1, 18);
+}
+
+footer p {
+	color: rgb(242, 255, 255);
+}
