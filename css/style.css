@@ -9,14 +9,14 @@ body {
 }
 
 .container::-webkit-scrollbar {
-	width: 7px;
-	background: rgb(242, 211, 242);
+	width: 5px;
+	background: rgba(1, 0, 0, 0.2);
 }
 
 .container::-webkit-scrollbar-thumb {
 	background: rgba(0, 0, 0, 0.7);
-	border-radius: 5px;
-	border-right: 2px solid rgb(242, 211, 242);
+	border-radius: 3px;
+	border-right: 1px solid rgb(225, 211, 242);
 }
 
 header {
