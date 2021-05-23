@@ -68,52 +68,113 @@ main {
 }
 
 #welcome-section {
+	display: block;
     background-image: linear-gradient(
         115deg,
-        rgba(5, 13, 3, 0.6),
-        rgba(233, 56, 91, 0.6)), url(https://www.wearemarketing.com/uploads/media/default/0001/21/1778829c66b7800a38a5c6ec92827c482fc056cb.jpeg);
+        rgba(4, 10, 0, 0.6),
+        rgba(80, 50, 94, 0.6)), url(https://www.wearemarketing.com/uploads/media/default/0001/21/1778829c66b7800a38a5c6ec92827c482fc056cb.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 624px;
+    position: static;
+	width: 100%;
+	height: 100vh;
 }
 
-#welcome-section h1 p {
+
+#welcome-section .neon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-#welcome-section h1 {
-	padding: 200px 50px 30px;
-	font-family: serif;
-	font-size: 100px;
+	position: absolute;
+	width: fit-content;
+	top: 44%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0 20px;
+	font-size: 6em;
 	font-weight: bold;
-	text-align: -webkit-center;
-	color: ghostwhite;
+	color: #fff;
+	text-shadow: 0 0 20px rgb(196, 32, 8);
+
 }
 
-#welcome-section p {
-	color: ghostwhite;
-    font-size: xxx-large;
-    font-family: serif;
-    text-align: -webkit-center;
-    font-style: oblique;
-    font-weight: bold;
-    padding: 5px;
+#welcome-section .neon1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 4em;
+	font-style: oblique;
+	font-weight: bold;
+	padding: 5px;
+	color: #fff;
+	text-shadow: 0 0 20px rgb(196, 32, 8);
+
+}
+
+#welcome-section .neon:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: rgb(34, 121, 89);
+	filter: blur(15px);
+}
+
+#welcome-section .neon:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgb(34, 145, 89);
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+
+}
+
+#welcome-section .neon1:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: rgb(34, 121, 89);
+	filter: blur(15px);
+}
+
+#welcome-section .neon1:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgb(34, 145, 89);
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+
 }
 
 #projects {
 	background-color: rgb(3, 1, 18);
-	height: 780px;
+	height: 750px;
 }
 
 #projects .container {
-	max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
-    margin: 0px 183px;
-    padding-top: 41px;
+    padding: 41px;
+    width: 100%;
+    height: 411px;
 }
 
 #projects h2 {
@@ -139,7 +200,7 @@ main {
 #projects .project-tile figure img {
 	display: block;
 	width: 279px;
-    height: 163px;
+    height: 335px;
 }
 
 #projects .project-tile figcaption {
@@ -147,6 +208,7 @@ main {
     align-items: center;
     justify-content: center;
     font-size: x-large;
+    padding: 20px 10px;
 }
 
 .btn {
@@ -165,7 +227,7 @@ main {
     width: 198px;
     background: rgb(150, 129, 144);
     transition: background 0.3s ease-out;
-    margin: 10px 585px 5px;
+    margin: 75px 585px 5px;
 }
 
 .btn-ir-a:hover {
@@ -173,7 +235,7 @@ main {
 }
 
 #contact {
-	background-color: rgb(214, 131, 146);
+	background-color: rgba(80, 50, 94, 0.6);
 	height: 525px;
 }
 
