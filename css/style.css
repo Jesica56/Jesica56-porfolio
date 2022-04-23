@@ -1,0 +1,302 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none; 
+}
+
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*navbar stilos*/
+#navbar {
+	position: fixed;
+	width: 100%;
+	padding: 30px 0;
+	transition: all 0.3s ease;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#navbar.sticky {
+	padding: 30px 0;
+	background: crimson;
+}
+
+#navbar .logo a {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+#navbar .logo a span {
+	color: crimson;
+	transition: all 0.3s ease;
+}
+
+#navbar.sticky .logo a span {
+	color: #fff;
+}
+
+#navbar .menu_items li {
+	list-style: none;
+	display: inline-block;
+}
+
+#navbar .menu_items li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+
+#navbar .menu_items li a:hover {
+	color: crimson;
+}
+
+#navbar.sticky .menu_items li a:hover  {
+	color: #fff;
+}
+/*menu btn*/
+.menu-btn {
+	color: #fff;
+	font-size: 23px;
+	cursor: pointer;
+	display: none;
+}
+/*seccion de Bienvenida*/
+#welcome-section {
+	display: flex;
+	background: linear-gradient( 155deg, rgba(21, 20, 58), rgba(2, 61, 34, 0.5)),
+	url(https://static.diariofemenino.com/uploads/psicologia/218766-sonar-atardecer.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	color: #fff;
+	min-height: 500px;
+}
+
+#welcome-section  .home{
+	display: flow-root;
+	margin: auto;
+}
+
+#welcome-section .text-1 {
+	font-size: 75px;
+	font-weight: 600;
+	margin-left: -3px;
+}
+#welcome-section .text-2 {
+	font-size: 50px;
+	text-align: center;
+}
+
+#welcome-section .text-2 span {
+	color: rgb(211, 20, 58);
+	font-weight: 500; 
+}
+/*Seccion proyectos*/
+#projects  {
+	background: rgb(88, 3, 10);
+	height: 783px;
+}
+#projects h2 {
+	font-size: 60px;
+	font-weight: lighter;
+	color: cornsilk;
+	margin-left: auto;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+
+}
+
+#projects .container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    grid-gap: 70px;
+    padding: 41px;
+    width: auto;
+    height: auto;
+}
+#projects .container  .project-tile {
+	cursor: pointer;
+}
+#projects .project-tile figure {
+	transition: all 0.5s ease;
+}
+
+#projects .project-tile figure img {
+	display: flex;
+	width: 246px;
+    height: 377px;
+	border-style: double;
+border-color: black;
+}
+   
+#projects .project-tile figure:hover {
+	 transform: scale(0.9); 
+}
+
+#projects .project-tile figcaption {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    color: black;
+    height: 72px;
+width: 248px;
+    border-style: double;
+    border-color: black;
+    padding: 5px;
+    background: linear-gradient(8deg, rgb(230, 255, 255, 99), transparent);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-ir-a {
+    width: 230px;
+    padding: 20px;
+    margin: 28px 517px 28px 517px;
+    background-color: transparent;
+    border: 1.5px solid transparent;
+    color: beige;
+    border-radius: 5px;
+    transition: all 0.3s;
+    position: relative;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.btn-ir-a:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-top: 3.5px solid rgb(36, 189, 189);
+	border-left: 3.5px solid rgb(152, 60, 91);
+	position: absolute;
+	left: -1;
+	right: 0;
+	bottom: 0;
+	top: -1;
+	transition: all 0.2s;
+}
+
+.btn-ir-a:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-bottom: 3.5px solid rgb(36, 189, 189);
+	border-right: 3.5px solid rgb(152, 60, 91);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	transition: all 0.2s;
+}
+
+.btn-ir-a:hover:after {
+	width: 201px;
+	height: 70px;
+}
+
+.btn-ir-a:hover:before {
+	width: 201px;
+	height: 70px;
+}
+
+
+#contact {
+	background-color: black;
+	background-image: 
+	linear-gradient( 189deg, rgba(7, 3, 5, 0.6), rgba(62, 51, 34, 0.5)),
+	url(https://www.grupoioe.es/wp-content/uploads/2018/10/141.Dinamicas-de-trabajo-en-equipo-para-potenciar-talento.jpg);
+	height: 500px;
+}
+
+
+#contact h2 {
+	display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: rgb(255, 255, 255);
+font-size: 77px;
+font-style: normal;
+font-weight: bold;
+padding: 97px 40px 30px;
+}
+
+#contact .contact-link {
+	  display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+  }
+
+#contact .contact-link i {
+	padding: 10px;
+	transition: .3s ease;
+	margin: 10px;
+	border-style: double;
+	border-color: rgb(247, 243, 243);
+	background-color: darkred;
+}
+
+#GitHub:hover {
+	cursor: pointer;
+	color: rgb(243, 235, 235);
+	transform: translateY(-6px);
+}
+
+#email:hover {
+	cursor: pointer;
+	color: rgb(241, 237, 237);
+	transform: translateY(-6px);
+}
+
+#mobil:hover {
+	cursor: pointer;
+	color: rgb(232, 232, 236);
+	transform: translateY(-6px);
+}
+
+#linkedin:hover {
+	cursor: pointer;
+	color: rgb(249, 249, 250);
+	transform: translateY(-6px);
+}
+
+#contact .contact-link i a {
+	color: rgb(249, 249, 250);
+	text-decoration: none;
+    font-size: xx-large;
+	font-weight: bold;
+}
+
+footer {
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: rgba(3, 1, 18);
+}
+
+footer p {
+	color: rgb(242, 255, 255);
+}
+
